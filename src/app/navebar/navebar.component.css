@@ -1,0 +1,64 @@
+.rite{
+    text-align:center;
+    margin-LEFT: 200px;
+    MARGIN-TOP:0px;
+    height: 400PX;
+    width: 600px;
+      }   
+      .ho{
+        width: 400px;
+        border: 2px solid blue; 
+      }
+      footer{
+        background-color:whitesmoke;
+      }
+    
+      .bu {
+        background-color:yellow;
+        border: none;
+        color:gray;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+      }
+  .t2{
+    vertical-align:top;
+    
+  }
+  body{
+    background-color:whitesmoke;
+    width: 1230px;
+    height:max-content;
+  }
+
+H1{text-align:center;
+color: lightseagreen;}
+ 
+h2{ 
+    color: blue;
+    text-align:center;
+
+}
+.t2{
+  vertical-align:top;
+}
+textarea{
+  border-color: blue;
+}
+
+
+ input[type=email]{
+     width:80%;
+     border: 3px solid black;
+
+    }
+    input{
+     width:80%;
+     border: 3px solid black;
+    
+    }
+
+        
+        

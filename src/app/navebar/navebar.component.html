@@ -1,0 +1,71 @@
+
+<header>
+<br>
+<h1> ESPACEINFORMATIONS ABOUT HOUSE </h1>
+</header>
+<body>
+  <table>
+  <tbody>
+  <tr>
+  <td [ngClass]="'t1'">
+ <div [ngClass]="'ho'" *ngFor="let u of homes">
+ codehome {{u.codehome}}<br>
+  country:{{u.country}} <br>
+ phone: {{u.phone}} <br>
+ email: {{u.email}} <br>
+ espace: {{u.espace}} <br>
+ price: {{u.price}} <br> 
+   set information about house:{{u.text}}<br>
+ {{u.photo}}<br>     
+ <br>
+ <br>
+ <button [ngClass]="'bu' "(click)="onDeleteHome(u.id)">delete users</button>
+<br>
+ </div>
+ </td>
+     <td [ngClass]="'t2'">
+     <div  [ngClass]="'rite'">
+
+      <form #f="ngForm" (ngSubmit)="submit(f)">
+       <h2>SET HOME INFORMATIONS</h2>
+
+        <input type="text" name="codehome" placeholder="codehome" #codehome="ngModel" ngModel  required>
+       <div class="alert alert-danger"*ngIf="codehome.errors?.['required'] && codehome.touched">this input is required
+         </div>
+       <br>
+       <br>
+      <input type="text" name="country" placeholder="country" #country="ngModel" ngModel  required>
+      <div class="alert alert-danger"*ngIf="country.errors?.['required'] && country.touched">this input is required</div>
+      <br>
+      <br>
+      <input type="tel" name="phone" placeholder="phone of buyer"#phone="ngModel" ngModel required minlength="8">
+      <div class="alert alert-danger"*ngIf="phone.errors?.['minlength'] && phone.touched">this input is required</div>
+      <br>
+      <br>
+      <input type="email" name="email" placeholder="email"#email="ngModel" ngModel required>
+      <div class="alert alert-danger"*ngIf="email.errors?.['required'] && email.touched">this input is required</div>
+      <br>
+      <br>
+     <input type="text" name="espace" placeholder="espace en mètre"#espace="ngModel" ngModel required>
+     <div class="alert alert-danger"*ngIf="espace.errors?.['required'] && espace.touched">this input is required</div>
+     <br>
+      <br>
+      <input type="text"  name="price" placeholder="price en dinars"#price="ngModel" ngModel required>
+      <div class="alert alert-danger" *ngIf="price.errors?.['required'] && price.touched ">this input is required</div>
+      <br>
+      <br>
+      <textarea name="text"  rows="10" cols="40"placeholder="set more information about home" #text="ngModel" ngModel>  </textarea>
+      <!-- <input type="url" name="photo" placeholder=" photo of home" accept="image/*"  #photo="ngModel" ngModel  required> 
+       <img [src]="photo.value" *ngIf="photo.value">  
+      <br>
+      <br> -->
+      <br>
+      <button class="btn btn-warning" (click)="onPostHome(f.value)" type="submit" [disabled]="f.invalid">submit</button>
+      </form>
+     </div>
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  </body>
+  

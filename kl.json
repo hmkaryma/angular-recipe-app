@@ -1,0 +1,34 @@
+{
+  "home": [
+    {
+      "codehome": "G345",
+      "country": "TUNIS",
+      "phone": "24356778",
+      "email": "SAMI@gmail.com",
+      "espace": "400m",
+      "price": "700.000.000",
+      "text": "4 rooms+1bathroom+1kitchen",
+      "id": 1
+    },
+    {
+      "codehome": "FG543",
+      "country": "sousa",
+      "phone": "24678900",
+      "email": "ramii@gmail.com",
+      "espace": "500m",
+      "price": "600.000.000",
+      "text": "",
+      "id": 2
+    },
+    {
+      "codehome": "h56",
+      "country": "NABEL",
+      "phone": "98655700",
+      "email": "lobna@gmail.com",
+      "espace": "300m",
+      "price": "500.000.000",
+      "text": "3rooms+kitchen+2bathroom",
+      "id": 3
+    }
+  ]
+}

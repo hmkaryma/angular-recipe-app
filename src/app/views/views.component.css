@@ -1,0 +1,60 @@
+.right{
+    float: left;
+    text-align:center;
+    margin-LEFT:200px;
+    MARGIN-TOP:0px;
+    height: 400PX;
+    width: 600px;
+      }   
+    .users {
+     width:400px;
+     border: 2px solid blue ;
+    }
+  
+  H1{ text-align:center;
+    color: lightseagreen;}
+
+  
+    body{
+      background-color:whitesmoke;
+      width: 1230px;
+      height: max-content;
+    }
+  
+  .d2{
+    vertical-align:top;
+  }
+      .bu {
+        background-color:rgba(255, 255, 0, 0.623);
+        border: none;
+        color:gray;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+    h3{
+        font-weight: bold;
+        color: seagreen;
+    }
+    h2{ margin-LEFT: 200px;
+        font-weight: bold;
+        color:blue;
+        text-align: center;
+    }
+    
+     input[type=email]{
+         width:80%;
+         border: 3px solid black;
+    
+        }
+        input{
+         width:80%;
+         border: 3px solid black;
+        }
+    
+            
+        
+        

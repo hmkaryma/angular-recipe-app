@@ -1,0 +1,64 @@
+<header>
+<h1>ESPACE INFORMATIONS ABOUT USERS(buyer)</h1> 
+</header>
+<body>
+<table>
+  <tbody>
+    <tr>
+  <td [ngClass]="'d1'">
+
+<div [ngClass]="'users'" *ngFor="let u of lesUtilisateurs">
+   firstname: {{u.firstname}} <br>
+  lastname: {{u.lastname}} <br> 
+  country:{{u.country}}<BR>
+  email:{{u.email}}<br>
+  phone:{{u.phone}}
+    <br>
+  <button [ngClass]="'bu'"(click)="onDeleteUsers(u.id)">delete users</button> 
+  <br>
+  <br>
+  </div>
+</td>
+
+<td [ngClass]="'d2'">
+  <h2>INFORMATIONS ABOUT THE BUYER </h2>
+   <div [ngClass] ="'right'">
+    <form  [formGroup]="mform" (ngSubmit)="print()">
+     <br>
+    <input type="text" formControlName="firstname" placeholder=" firstname" required >
+    <div class="alert alert-danger"*ngIf="mform.get ('firstname').touched && mform.get ('firstname').hasError('required')">this input username is required</div>
+     <div class="alert alert-danger"*ngIf="mform.get ('firstname').hasError('minLength')">this input username should be minimum 3 caractere</div>
+   <br>
+   <br> 
+   <input type="text" formControlName="lastname" placeholder=" lastname" required >
+   <div class="alert alert-danger"*ngIf="mform.get ('lastname').touched && mform.get ('lastname').hasError('required')">this input username is required</div>
+<BR>
+  <BR>
+<input type="text" formControlName="country" placeholder=" country" required>
+<br>
+<br>
+    <input type="email" formControlName="email" placeholder=" email"required>
+    <div class="alert alert-danger"*ngIf="mform.get('email').hasError('email')">this input is not email</div>
+    <div class="alert alert-danger"*ngIf="mform.get ('email').touched && mform.get ('email').hasError('required')">this input email is required</div>
+   <br>
+    <br>
+   <input type="tel" formControlName="phone" placeholder=" phone" required>
+    <br>
+    <br>
+    <button class="btn btn-warning"  (click)="onPostUsers(mform.value)" type="submit"[disabled]="mform.invalid">save</button>
+     </form>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+  </body>
+
+
+
+
+
+
+
+
+
