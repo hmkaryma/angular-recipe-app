@@ -10,6 +10,7 @@ import{PagenotfoundComponent} from'./pagenotfound/pagenotfound.component';
 
 const routes:Routes=  
 [
+
 {path:'  ',component:HomeComponent},
 {path:'about',component:AboutComponent},
 {path:'navebar/karyma/123',component:NavebarComponent},
@@ -20,7 +21,6 @@ children:[
 {path:'details',component:DetailsComponent}
 ]},
 {path:'**',component:PagenotfoundComponent}
-
 ]
 
 @NgModule({
